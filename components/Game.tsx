@@ -78,7 +78,7 @@ function Game({ randomnumbercount, intialSeconds, onPlayAgain }) {
     const GameStatus = gameStatus();
     return (
         <View style={styles.container}>
-            <Text style={[styles.buttonStyle, styles[`STATUS_${GameStatus}`]]}>{target}</Text>
+            <Text style={[styles.buttonStyle,{marginTop:60}, styles[`STATUS_${GameStatus}`]]}>{target}</Text>
             <View style={styles.randomContainer}>
                 {randomNumbers.map((randomnum, index) =>
                     <View style={{ width: windowWidth / 2.1 }}>
